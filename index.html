@@ -10,6 +10,7 @@
 <body>
   <header>
     <h1 class="title">What's for Dinner?</h1>
+    <button class="recipe-button" id="allrecipes">VIEW ALL RECIPES</button>
     <button class="recipe-button">ADD A RECIPE</button>
   </header>
 
@@ -41,6 +42,11 @@
     <section>
       <div class="box pot">
         <img class="cookpot" src="assets/cookpot.svg" alt="cookpot image"></img>
+        <div class="recipe-display hidden">
+          <p class="recipetag"> You should make:</p>
+          <h2 class="recipe"></h2>
+          <button class="clear">CLEAR</button>
+        </div>
       </div>
     </section>
   </main>

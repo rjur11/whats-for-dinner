@@ -54,17 +54,46 @@ var mainButt = document.querySelector("#main");
 var dessertButt = document.querySelector("#dessert");
 var allButt = document.querySelector("#entire");
 var letsCookButt = document.querySelector(".lets-cook");
+var potImg = document.querySelector(".cookpot");
+var recipeBox = document.querySelector(".recipe");
+var recipeTag = document.querySelector(".recipetag");
+var clearButt = document.querySelector(".clear");
+var allRecipesButt = document.querySelector("#allrecipes");
+var recipeDisplay = document.querySelector(".recipe-display");
 
 letsCookButt.addEventListener("click", pullDish);
+clearButt.addEventListener("click", resetSelection);
+allRecipesButt.addEventListener("click", swapToRecipes);
 
 function pullDish() {
   if (sideButt.checked) {
-    console.log("Peas");
+    swapPot();
+    showRecipe(sides);
   } else if (mainButt.checked) {
-    console.log("Chicken");
+    swapPot();
+    showRecipe(mains);
   } else if (dessertButt.checked) {
-    console.log("Cheesecake");
+    swapPot();
+    showRecipe(desserts);
   } else {
     console.log("ignore me");
   }
+}
+
+function swapPot() {
+  potImg.classList.add("hidden");
+  recipeDisplay.classList.remove("hidden");
+}
+
+function showRecipe(array) {
+  recipeBox.innerText = `${array[pullRandomRecipe(array)]}!`;
+}
+
+function resetSelection() {
+  potImg.classList.remove("hidden");
+  recipeDisplay.classList.add("hidden");
+}
+
+function pullRandomRecipe(array) {
+  return Math.floor(Math.random() * array.length);
 }
