@@ -84,3 +84,20 @@ input[type="radio"] {
 .lets-cook:hover {
   background: #95a5a6;
 }
+
+.hidden {
+  display: none;
+}
+
+.recipetag {
+  font-style: italic;
+}
+
+.clear {
+  background: #95a5a6;
+  border: none;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  margin: 75px;
+}
