@@ -49,6 +49,13 @@ section {
   padding: 50px;
 }
 
+.food-box {
+  background-color: rgba(225, 225, 225, .9);
+  display: flex;
+  vertical-align: top;
+  padding: 50px;
+}
+
 input[type="radio"] {
   margin: 0 10px 0 10px;
 }

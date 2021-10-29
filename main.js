@@ -60,10 +60,15 @@ var recipeTag = document.querySelector(".recipetag");
 var clearButt = document.querySelector(".clear");
 var allRecipesButt = document.querySelector("#allrecipes");
 var recipeDisplay = document.querySelector(".recipe-display");
+var allRecipesPage = document.querySelector(".all-recipes");
 
 letsCookButt.addEventListener("click", pullDish);
 clearButt.addEventListener("click", resetSelection);
 allRecipesButt.addEventListener("click", swapToRecipes);
+
+function swapToRecipes() {
+  allRecipesPage.classList.remove("hidden");
+}
 
 function pullDish() {
   if (sideButt.checked) {
