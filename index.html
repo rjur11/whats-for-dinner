@@ -10,12 +10,11 @@
 <body>
   <header>
     <h1 class="title">What's for Dinner?</h1>
-    <button class="recipe-button" id="allrecipes">VIEW ALL RECIPES</button>
-    <button class="recipe-button">ADD A RECIPE</button>
+    <button class="recipe-button">VIEW ALL RECIPES</button>
+    <button class="meal-button hidden">PICK MY MEAL</button>
   </header>
 
-  <main>
-
+  <main class="home-view">
     <section>
       <div class="box">
         <h2>What are you looking for?<span class="asterix">*</span></h2>
@@ -51,7 +50,35 @@
       </div>
     </section>
   </main>
+  <main class="allrecipes-view hidden">
+    <section>
+      <div class="recipe-box">
+        <h3>SIDES</h3>
+        <div class="sides"></div>
+        <input type="text" id="sides">
+        <button class="add-side">Add Dish</button>
+      </div>
+    </section>
+    <section>
+      <div class="recipe-box">
+        <h3>MAINS</h3>
+        <div class="mains"></div>
+        <input type="text" id="mains">
+        <button class="add-main">Add Dish</button>
+      </div>
+    </section>
+    <section>
+      <div class="recipe-box">
+        <h3>DESSERTS</h3>
+        <div class="desserts"></div>
+        <input type="text" id="desserts">
+        <button class="add-dessert">Add Dish</button>
+      </div>
+    </section>
 
+
+
+  </main>
 
 </body>
 <script type="text/javascript" src="main.js"></script>
