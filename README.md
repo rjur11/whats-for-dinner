@@ -2,22 +2,34 @@
 
 ## Overview
 
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
+What's for Dinner? The ultimate question. This simple webpage is for those indecisive folks out there who can't easily decide on what to eat for their next meal.
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+This version of What's for Dinner provides two opportunities for user interaction. The first is an application that pulls a randomly generated side dish, main dish, or dessert from a pre-determined list of recipes. One click, and voila! It'll be Steak and potatoes for dinner tonight.
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
+If a user wants to provide their own recipe lists, or edit/delete the pre-loaded selections, they can do so! Head on over to the "View all Recipes" page and edit, add, and delete to your heart's content. Then, head back to the "Pick my Meal" page to randomly pull from your newly created lists.
 
-## Learning Goals
+## Technologies Used
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+- Javascript
+- CSS
+- HTML
 
-## Setup
+## Setup Instructions
 
 - Fork this project to your own Github account
 - Clone the repository to your local machine
 - `cd` into the project
-- Read this README thoroughly, then begin working!
+- Type open index.html to run the application
+
+## Created by:
+Rana Jurjus [GitHub](https://github.com/rjur11)
+
+## Application in Action!
+
+![Pick my Meal Page](./imgs/Dinner1.png)
+
+![Pick my Meal Page 2](./imgs/Dinner2.png)
+
+![All Recipes Page](./imgs/Dinner3.png)
+
+![All Recipes Page](./imgs/EditDinner.gif)
