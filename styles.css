@@ -49,6 +49,14 @@ section {
   padding: 50px;
 }
 
+.recipe-box {
+  background-color: rgba(225, 225, 225, .9);
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  padding: 50px;
+}
+
 .food-box {
   background-color: rgba(225, 225, 225, .9);
   display: flex;
